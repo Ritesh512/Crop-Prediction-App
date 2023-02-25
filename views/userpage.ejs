@@ -1,0 +1,16 @@
+<%- include("partials/userheader")%>
+
+<section class="container">
+    <div class="box ">
+        <h1>Listed Crops</h1>
+        <% Crops.forEach(function(crop) { %>
+                <div class="">
+                    <!-- <h4><a href=""><%=crop%></a></h4> -->
+                    <p class=""><%=(crop.toUpperCase()).concat('.....')%><a href="/userpage/<%= crop.toLowerCase() %>">Click Here</a></p>
+                </div>
+       <% }) %>
+    </div>
+    
+</section>
+
+<%- include("partials/footer")%>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Add Crop</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <p class="navbar-brand">ADD PRODUCT</p>
+          </div>
+            <ul class="nav navbar-nav navbar-right">
+              <!-- 6 -->
+              <li id="home"><a href="/userpage">HOME</a></li>
+              <!-- <li id="about"><a href="/about">CHECK CROPS</a></li> -->
+              <li id="contact"><a href="/logout">LOGOUT</a></li>
+            </ul>
+        </div>
+      </nav>
+
+      <section class="container">
+        <form  action="/addcrop" method="post">
+            <div class="form-group col-md-10">
+                <label for="postTitle">Address</label>
+                <input class="form-control" type="text" name="address" placeholder="type here" value="">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="postTitle">Nitrogen Content</label>
+                <input class="form-control" type="text" name="nt" placeholder="type here" value="">
+            </div>
+            <div class="form-group col-md-4 ">
+                <label for="postTitle">Phosphorus Content</label>
+                <input class="form-control" type="text" name="pt" placeholder="type here" value="">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="postTitle">Potassium Content</label>
+                <input class="form-control" type="text" name="kt" placeholder="type here" value="">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="postTitle">Temperature</label>
+                <input class="form-control" type="text" name="temp" placeholder="type here" value="">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="postTitle">Humadity</label>
+                <input class="form-control" type="text" name="humadity" placeholder="type here" value="">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="postTitle">PH</label>
+                <input class="form-control" type="text" name="ph" placeholder="type here" value="">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="postTitle">Rainfall</label>
+                <input class="form-control" type="text" name="rain" placeholder="type here" value="">
+            </div>
+            <div class="form-group col-md-10">
+                <button class="btn btn-primary" type="submit" name="button" value="">Predict</button>
+            </div>
+            
+        </form>
+      </section>
+      <section class="addresult">
+        <div class="container">
+            <h3></h3>
+            <button class="btn btn-primary">Save</button>
+        </div>
+      </section>
+
+<%- include("partials/footer")%>
