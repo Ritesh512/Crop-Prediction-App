@@ -5,4 +5,6 @@ Application is able to predict crop using soil parameters. It also provide crop 
 command - nodemon app.js
 2. Run pyserver.py file
 and then follow the video
-https://github.com/Ritesh512/Crop-Prediction-App/blob/main/vid.mp4
+
+https://user-images.githubusercontent.com/89989932/221343991-a7556d8a-4b6e-4abc-b316-4f45e23f2bd3.mp4
+
