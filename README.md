@@ -1,17 +1,34 @@
 ## Crop-Prediction-App
-Application is able to predict crop using soil parameters. It also provide crop details to the user. 
+```
+Application is able to predict crop using soil parameters. It also provide crop cultivation details to the user. 
+It is Train on 20+ crops based on soil parameters and delivering cultivation details to
+farmers for the recommended crops.
 
+# Data fields
+N - ratio of Nitrogen content in soil
+P - ratio of Phosphorous content in soil
+K - ratio of Potassium content in soil
+temperature - temperature in degree Celsius
+humidity - relative humidity in %
+ph - ph value of the soil
+rainfall - rainfall in mm
+```
 
-# Aim:
+# Goal Achieved:
  ```
-Develop a website which can predict crops based on the users soil parameters.
+• Developed an application predicting over 20+ crops based on soil parameters and delivering cultivation details to
+farmers for the recommended crops.
+• Implemented robust security measures, incorporating Bcrypt encryption and JWT authentication to ensure secure
+access control based on roles.2 way encryption Django.
+• It was train using Random Forest, achieving an accuracy rate of 90%
  ```
 # Features
+```
 - User can register to the website.
 - User can add soil details to the predection page.
 - User can see the cultivation details for all the predicted crops on his/her dashboard. 
 - Machine Learning Model for predicting the crops based on soil parameters.
-
+```
 
 
 # Results
